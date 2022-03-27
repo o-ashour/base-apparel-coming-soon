@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+@import 'resets';
+
 body {
-  background-color: aquamarine;
+  font-family: 'Josefin Sans', sans-serif;
+  background-image: url('/base-apparel-coming-soon/build/images/bg-pattern-desktop.svg');
+  // background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
