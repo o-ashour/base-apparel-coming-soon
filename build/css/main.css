@@ -73,6 +73,10 @@ header .logo {
   width: 100%;
 }
 
+.form-container {
+  padding: 0 1em;
+}
+
 .form-container h1 {
   color: #413a3a;
   font-size: 2.5rem;
@@ -89,7 +93,36 @@ header .logo {
 .form-container p {
   color: #ce9797;
   text-align: center;
-  padding: 0 1.1em;
   line-height: 1.6;
   margin-top: 1em;
+}
+
+.signup-form {
+  position: relative;
+}
+
+.signup-form input {
+  color: #ce9797;
+  border: none;
+  border: 1px solid #ce9797;
+  border-radius: 26px;
+  width: 100%;
+  padding: 1.25em 1.5em;
+}
+
+.signup-form input:focus {
+  outline: none;
+}
+
+.signup-form button {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  border: none;
+  border-radius: 26px;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  padding: 0 2em;
+  z-index: 1;
+  -webkit-box-shadow: 0px 10px 16px #ce979794;
+          box-shadow: 0px 10px 16px #ce979794;
 }
