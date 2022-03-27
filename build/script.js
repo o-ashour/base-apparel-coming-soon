@@ -1,4 +1,5 @@
-console.log('hello world');
+// work on regex
+// make error styles go away after initial state 
 
 const emailEL = document.getElementById('email');
 const submitEL = document.querySelector('button');
@@ -15,6 +16,8 @@ function isMail(e) {
   }
   else {
     console.log('not an email :(');
+    emailEL.style.borderColor = "hsl(0, 93%, 68%)";
+    emailEL.style.borderWidth = "2px";
   }
 
   e.preventDefault();

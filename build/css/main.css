@@ -115,9 +115,18 @@ header .logo {
   outline: none;
 }
 
+.signup-form .error-icon {
+  position: absolute;
+  top: 0.8em;
+  right: 5em;
+  font-size: 1em;
+  z-index: 2;
+}
+
 .signup-form button {
   position: absolute;
   right: 0;
+  top: 0;
   height: 100%;
   border: none;
   border-radius: 26px;
@@ -126,4 +135,10 @@ header .logo {
   z-index: 1;
   -webkit-box-shadow: 0px 10px 16px #ce979794;
           box-shadow: 0px 10px 16px #ce979794;
+  cursor: pointer;
+}
+
+.signup-form button:active {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
 }
