@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
 
 @import 'resets';
+@import 'config';
+
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name)
+};
 
 body {
   font-family: 'Josefin Sans', sans-serif;
@@ -8,4 +13,49 @@ body {
   // background-color: #000;
   background-repeat: no-repeat;
   background-size: cover;
+  // display: flex;
+  // flex-direction: column;
 }
+
+header {
+  height: 6em;
+  position: relative;
+
+  .logo {
+    width: 7em;
+    position: absolute;
+    top: 2em;
+    left: 1.25em;
+  }
+}
+
+.hero {
+  margin-bottom: 4em;
+
+  img {
+    width: 100%;
+  }
+}
+
+.form-container {
+  h1 {
+    color: $neutral;
+    font-size: 2.5rem;
+    font-weight: weight('semi-bold');
+    letter-spacing: 0.7rem;
+    text-align: center;
+    
+    span {
+      font-weight: weight('light');
+      color: $primary-1;
+    }
+  }
+  p {
+    color: $primary-1;
+    text-align: center;
+    padding: 0 1.1em;
+    line-height: 1.6;
+    margin-top: 1em;
+  }
+}
+

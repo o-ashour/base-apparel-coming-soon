@@ -52,3 +52,44 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+header {
+  height: 6em;
+  position: relative;
+}
+
+header .logo {
+  width: 7em;
+  position: absolute;
+  top: 2em;
+  left: 1.25em;
+}
+
+.hero {
+  margin-bottom: 4em;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.form-container h1 {
+  color: #413a3a;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0.7rem;
+  text-align: center;
+}
+
+.form-container h1 span {
+  font-weight: 300;
+  color: #ce9797;
+}
+
+.form-container p {
+  color: #ce9797;
+  text-align: center;
+  padding: 0 1.1em;
+  line-height: 1.6;
+  margin-top: 1em;
+}
