@@ -1,11 +1,25 @@
 // work on regex
+window.onload = changeHero;
 
 const emailEL = document.getElementById('email');
 const submitEL = document.querySelector('button');
 const errIconEL = document.querySelector('.error-icon');
 const errMsgEL = document.querySelector('.err-msg');
+const heroEL = document.querySelector('.hero');
+
+window.addEventListener("resize", changeHero);
 
 submitEL.addEventListener('click', isMail);
+
+function changeHero() {
+  if (window.matchMedia("(min-width: 900px)").matches) {
+    console.log("Screen width is at least 376px");
+    heroEL.firstElementChild.setAttribute('src', '/base-apparel-coming-soon/build/images/hero-desktop.jpg');
+  } else {
+    console.log("Screen less than 376px");
+    heroEL.firstElementChild.setAttribute('src', '/base-apparel-coming-soon/build/images/hero-mobile.jpg');
+  }
+};
 
 function isMail(e) {
   // regex doesn't cover all cases, needs tweaking
@@ -25,3 +39,4 @@ function isMail(e) {
 
   e.preventDefault();
 }
+

@@ -75,6 +75,7 @@ header .logo {
 
 .form-container {
   padding: 0 1em;
+  text-align: center;
 }
 
 .form-container h1 {
@@ -82,7 +83,6 @@ header .logo {
   font-size: 2.5rem;
   font-weight: 600;
   letter-spacing: 0.7rem;
-  text-align: center;
 }
 
 .form-container h1 span {
@@ -92,7 +92,6 @@ header .logo {
 
 .form-container .main-txt {
   color: #ce9797;
-  text-align: center;
   line-height: 1.6;
   margin-top: 1em;
 }
@@ -157,4 +156,58 @@ header .logo {
   color: #f96262;
   margin-left: 2em;
   display: none;
+}
+
+@media (min-width: 900px) {
+  body {
+    background-image: url("/base-apparel-coming-soon/build/images/bg-pattern-desktop.svg");
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 57% auto;
+        grid-template-columns: 57% auto;
+    -ms-grid-rows: 1fr 5fr;
+        grid-template-rows: 1fr 5fr;
+  }
+  header {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    margin-left: 8em;
+  }
+  header .logo {
+    width: 10em;
+  }
+  .hero {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / 3;
+    margin-bottom: 0;
+  }
+  .hero img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: left;
+       object-position: left;
+  }
+  .form-container {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+    text-align: left;
+    margin-left: 8em;
+    margin-right: 16em;
+  }
+  .form-container h1 {
+    font-size: 4rem;
+  }
 }
