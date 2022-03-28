@@ -10,8 +10,6 @@
 body {
   font-family: 'Josefin Sans', sans-serif;
   background-color: #fff;
-  background-repeat: no-repeat;
-  background-size: cover;
   overflow: hidden;
 }
 
@@ -37,7 +35,6 @@ header {
 
 .form-container {
   padding: 0 1em;
-  // text-align: center;
 
   h1 {
     color: $neutral;
@@ -88,8 +85,10 @@ header {
 
   .error-icon {
     position: absolute;
-    top: 0.8em;
-    right: 5em;
+    top: 0em;
+    right: 0em;
+    margin-top: 1em;
+    margin-right: 5em;
     font-size: 1em;
     z-index: 2;
     display: none;
@@ -101,16 +100,12 @@ header {
     top: 0;
     height: 100%;
     border: none;
-    border-radius: 26px;
+    border-radius: 2.2em;
     background: $gradient-2;
     padding: 0 2em;
     z-index: 1;
     box-shadow: 0px 10px 16px #ce979794;
     cursor: pointer;
-  }
-
-  button:active {
-    transform: scale(0.97);
   }
 
   .err-msg {
@@ -145,7 +140,6 @@ header {
     margin-bottom: 0;
 
     img {
-      // width: auto;
       height: 100%;
       object-fit: cover;
       object-position: left;
@@ -180,7 +174,18 @@ header {
       }
 
       .error-icon {
-        top: 1.2em;
+        margin-right: 7em;
+        margin-top: 1.1em;
+      }
+
+      button {
+        padding: 0 3.2em;
+        right: -0.5em;
+      }
+
+      button:hover {
+        background: hsl(0, 75%, 87%);
+        box-shadow: 0 0.7em 1.8em #c28989de;
       }
     }
   }

@@ -13,10 +13,8 @@ submitEL.addEventListener('click', isMail);
 
 function changeHero() {
   if (window.matchMedia("(min-width: 900px)").matches) {
-    console.log("Screen width is at least 376px");
     heroEL.firstElementChild.setAttribute('src', '/base-apparel-coming-soon/build/images/hero-desktop.jpg');
   } else {
-    console.log("Screen less than 376px");
     heroEL.firstElementChild.setAttribute('src', '/base-apparel-coming-soon/build/images/hero-mobile.jpg');
   }
 };
