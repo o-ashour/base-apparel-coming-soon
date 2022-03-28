@@ -8,10 +8,12 @@ const errMsgEL = document.querySelector('.err-msg');
 const heroEL = document.querySelector('.hero');
 
 window.addEventListener("resize", changeHero);
-
 submitEL.addEventListener('click', isMail);
 
+emailEL.value = '';
+
 function changeHero() {
+  emailEL.value = '';
   if (window.matchMedia("(min-width: 900px)").matches) {
     heroEL.firstElementChild.setAttribute('src', '/base-apparel-coming-soon/build/images/hero-desktop.jpg');
   } else {
