@@ -51,6 +51,7 @@ body {
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 header {
@@ -75,7 +76,6 @@ header .logo {
 
 .form-container {
   padding: 0 1em;
-  text-align: center;
 }
 
 .form-container h1 {
@@ -83,6 +83,7 @@ header .logo {
   font-size: 2.5rem;
   font-weight: 600;
   letter-spacing: 0.7rem;
+  text-align: center;
 }
 
 .form-container h1 span {
@@ -92,6 +93,7 @@ header .logo {
 
 .form-container .main-txt {
   color: #ce9797;
+  text-align: center;
   line-height: 1.6;
   margin-top: 1em;
 }
@@ -114,7 +116,7 @@ header .logo {
   color: #ce9797;
   border: none;
   border: 1px solid #ce9797;
-  border-radius: 26px;
+  border-radius: 2em;
   width: 100%;
   padding: 1.25em 1.5em;
 }
@@ -148,8 +150,8 @@ header .logo {
 }
 
 .signup-form button:active {
-  -webkit-transform: scale(0.96);
-          transform: scale(0.96);
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
 }
 
 .signup-form .err-msg {
@@ -176,6 +178,7 @@ header .logo {
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
     margin-left: 8em;
+    margin-top: 2em;
   }
   header .logo {
     width: 10em;
@@ -204,10 +207,27 @@ header .logo {
     -ms-grid-row-span: 1;
     grid-row: 2 / 3;
     text-align: left;
-    margin-left: 8em;
-    margin-right: 16em;
+    margin: 5.5em 14em 0 8em;
   }
   .form-container h1 {
     font-size: 4rem;
+    letter-spacing: 1rem;
+    line-height: 1.15;
+    text-align: left;
+  }
+  .form-container .main-txt {
+    line-height: 1.8;
+    text-align: left;
+  }
+  .form-container .signup-form {
+    margin-top: 2.2em;
+  }
+  .form-container .signup-form input {
+    padding: 1.4em 2em;
+    font-size: 0.9rem;
+    letter-spacing: 0.06rem;
+  }
+  .form-container .signup-form .error-icon {
+    top: 1.2em;
   }
 }
